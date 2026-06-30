@@ -8,7 +8,7 @@ No high-level wrappers. No training wheels. Just pure PyTorch mechanics, explici
 
 ## 🗺️ Repository Structure & Learning Roadmap
 
-As displayed in the repository blueprint (`image_710c84.png`), this project maps a structured journey from machine learning basics to enterprise-ready deep learning pipelines:
+This project maps a structured journey from machine learning basics to enterprise-ready deep learning pipelines:
 
 ```text
 ├── 🛠️ FUNDAMENTALS & WORKFLOWS
