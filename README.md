@@ -1,19 +1,27 @@
-# End-to-End Deep Learning Pipeline & Modular Computer Vision Framework
+# 🧠 PyTorch Deep Learning Sandbox & Computer Vision Framework
 
-A high-performance, modular computer vision pipeline built entirely from scratch using **PyTorch**. This framework handles the complete deep learning lifecycle: structured data ingestion, device-agnostic tensor execution, custom neural network architecture design, and low-overhead evaluation loops. 
+Welcome to my deep learning and computer vision repository! This project tracks my technical progression from foundational tensor math to advanced multi-class Convolutional Neural Networks (CNNs), MLOps experiment tracking, and production-grade software modularity. 
 
-Rather than relying on high-level wrappers, this repository implements core PyTorch mechanics to maximize execution efficiency and protect against common pipeline failures.
-
----
-
-## 🛠️ Tech Stack & Dependencies
-
-*   **Frameworks:** PyTorch (`torch.nn`, `torch.utils.data`, `torch.autograd`)
-*   **Computer Vision:** Torchvision (`torchvision.transforms`), PIL (Pillow)
-*   **Analysis & Visualization:** NumPy, Scikit-Learn, Matplotlib
+Every notebook in this repository is self-contained, heavily documented, and optimized for device-agnostic execution (`CPU`, `GPU`, or `CUDA`).
 
 ---
 
-## 🏗️ Project Architecture & Modules
+## 🗺️ Repository Structure & Learning Roadmap
 
-The framework is decoupled into modular scripts to ensure reproducibility, scale, and clean maintenance, abandoning monolithic notebook architectures.
+As displayed in the repository blueprint (`image_710c84.png`), the project is structurally split into fundamental building blocks, advanced dataset tasks, and experiment tracking:
+
+```text
+├── 🛠️ FUNDAMENTALS & WORKFLOWS
+│   ├── CH_00_PyTorch_Fundamentals.ipynb           # Tensor creation, slicing, matrix math, and GPU memory routing
+│   ├── CH_01_PyTorch_Workflow.ipynb               # Linear regression modeling, data splitting, train/test loops, and serialization
+│   ├── CH_02_Neural_Network_Classification.ipynb  # Non-linear decision boundaries, binary/multi-class classification setups
+│   └── Hands_on_Regression_in_DL.ipynb           # Deep Learning regression patterns, feature scaling, and optimization
+│
+├── 🖼️ CUSTOM DATA & COMPUTER VISION
+│   ├── CH_04_PyTorch_Custom_Datasets.ipynb        # Subclassing torch.utils.data.Dataset & image preprocessing/transforms
+│   ├── CIFAR_10.ipynb                            # Deep multi-class CNN classifiers trained on the benchmark CIFAR-10 dataset
+│   └── Hands_on_FashionMNIST_v2.ipynb            # Dynamic multi-class clothes classification pipeline on FashionMNIST
+│
+└── 🚀 MLOPS & PRODUCTION REFACTORING
+    ├── CIFAR_10_with_WandB_Implementation.ipynb  # Cloud experiment tracking, metric logging, and hyperparameter management via WandB
+    └── CH_05_pytorch_going_modular_cell_mode.ipynb # Re-architecting notebook cells into clean, production-grade .py scripts
