@@ -39,6 +39,11 @@ Fine-tuned `bert-base-uncased` to decide whether a sentence contains the answer 
 - **Same pattern as MRPC:** with lr 5e-5, validation loss was lowest after epoch 1 on both datasets, even though QNLI had about 5 times more training data.
 - **Next ideas:** train for 1 to 2 epochs, try the full training set to see whether more data helps, and compare `metric_for_best_model='eval_accuracy'` against the default loss.
 
+## Compute Constraints and Experimental Scope
+
+Fine-tuned `bert-base-uncased` on a reproducible 20,000-example subset of the QNLI training dataset using Google Colab's free-tier compute resources. Evaluated performance on the validation split, monitored training and validation loss, and observed signs of overfitting across epochs.
+
+The experiment prioritizes understanding the fine-tuning workflow and evaluation process over maximizing dataset size. The reported results reflect this experimental setup and should not be interpreted as full-dataset benchmark performance.
 ## Usage
 
 ```python
